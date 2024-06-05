@@ -32,5 +32,56 @@ __uint__ ->  4 byte -> 32 bit -> [ 0; (2^32/2)]
 __ulong__ -> 8 byte -> 64 bit -> [ 0; (2^64/2)]
 
 ## O'zgaruvchini nomlash turlari:
+----------------------------------
+* PascalCase - har bir so`zning bosh harfi katta bilan
+* camelCase - birinchi so`z kichik va qolgan barchasi katta harf bilan(o'zgaruvchilarni shu case da saqlaymiz)
+* kebab-case - hammasi kichik va o`rtada chiziq bor
+* snake_case - hammasi kichik va o'rtada pastdan chiziq bor (ishlatilmaydi)
+----------------------------------
 
-PascalCase - 
+> BOOLEAN - HA/YO`Q, MUSBAT/MANFIY
+
+* bool -> 1 bit -> true/false
+
+bool isStudentHappy = true;
+
+  **_Tavfsiya  - is, are lar bilan boshlash_**
+
+---------------------------------------
+>* MATN - "Hello, World!"
+
+> string -> 24 byte ->
+
+string inputAge = Console.Readline();
+
+------------------------------------
+* Belgilar bilan
+> char -> "?"  (character)
+
+>char -> 2 byte
+---------------------------
+
+> * Kasr sonlar bilan
+(Kasr sonlar bilan ishlashda qanchalik aniqlikda ishlay olishida farq qiladi.)
+
+>float -> 4 byte -> 32 bit -> ~6 (kam hollarda ishlatiladi)
+
+>double -> 8 byte -> 64 bit -> ~15 
+
+>decimal -> 16 byte -> 128 bit -> ~28 son aniqlikda hisobga oladi. (ko'proq ishlatiladi)
+--------------------------
+> * __KONVERTATSIYA__
+
+string userAge = Console.Readline();
+int age = Convert.ToInt32(userAge);
+
+--------------------------------
+
+bool isOlder18 = true;
+bool isYounger27 = true;
+
+Console.WriteLine(!(isOlder18)); (__!__ - Emas degani)
+
+Console.WriteLine(isOlder18 || isYounger27); (__||__ Yoki degani)
+
+Console.WriteLine(isOlder18 && isYounger27); (__&&__ VA degani)
